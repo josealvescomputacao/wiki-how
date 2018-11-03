@@ -2,7 +2,11 @@
     
     "categoria" : {
          "nova": "casa"
-    }
+    },
+    "categorias" : {
+        "novas": "casa"
+   }
+
        
 
 }
