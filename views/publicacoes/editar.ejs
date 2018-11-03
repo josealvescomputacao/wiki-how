@@ -1,0 +1,14 @@
+<!--pegando dados do cliente e enviando para o servidor-->
+<%- include('../header') %>
+<form method="POST" action="/publicacoes/editar/<%=categoria%>/<%=publicacao.id%>">
+    <div class="form-group">
+        <label for="publicacao">Titulo</label>
+        <input type="text" class="form-control" name="titulo" id="publicacao" placeholder="Digite o título" value="<%= publicacao.titulo %>"/>
+    </div>
+    <div class="form-group">
+        <label for="conteudo">Conteúdo</label>
+        <textarea type="text" class="form-control"  name="conteudo" id="conteudo" placeholder="Digite o conteúdo"><%= publicacao.conteudo %></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Salvar</button>
+</form>
+<%- include('../footer') %>

@@ -1,0 +1,10 @@
+<!--pegando dados do cliente e enviando para o servidor-->
+<%- include('../header') %>
+<form method="POST" action="/categorias/nova">
+    <div class="form-group">
+        <label for="categoria">Categoria</label>
+        <input type="text" name="categoria" placeholder="Entre com a categoria"/>
+        <button type="submit" class="btn btn-primary">Salvar</button>
+    </div>
+</form>
+<%- include('../footer') %>
